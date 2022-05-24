@@ -59,7 +59,6 @@ public class AccountTests {
 
 		Assertions.assertThrows(IllegalArgumentException.class, () -> {
 			Account acc = AccountFactory.creatAccount(800.0);
-
 			acc.withdraw(801.0);
 		} );
 	}
